@@ -12,13 +12,24 @@ git clone https://github.com/Ivanhahanov/InformtionsSecurityMethodsAndTools.git
 ```
 ### Развертывание
 ```
-docker-compose
+docker-compose up
 ```
 ## Инструкция по выполнению
-что и как надо делать?
+1. необходимо запустить скрипт, который эмулирует взаимодействие пользователей с формой логина
 ```
-как сделать
+chmod +x serverHighLoad.sh
+./serverHighLoad.sh
+
+***Waiting***
 ```
+2. Зайти в [Kibana](http://localhost:5601) по адрессу http://localhost:5601
+
+```shell
+Логин: elsatic
+Пароль: changeme
+```
+3. Создание **Индекса**(index)
+
 ## Инструкция по тестированию
 как протестировать?
 ```
