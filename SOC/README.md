@@ -22,7 +22,7 @@ chmod +x serverHighLoad.sh
 
 ***Waiting***
 ```
-2. Зайти в [Kibana](http://localhost:5601) по адрессу http://localhost:5601
+2. Зайти в [Kibana](http://localhost:5601) по адресу http://localhost:5601
 
 ```shell
 Логин: elsatic
