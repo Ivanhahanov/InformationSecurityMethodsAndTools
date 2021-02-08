@@ -15,7 +15,7 @@ services:
       - maildata:/var/mail
       - mailstate:/var/mail-state
       - maillogs:/var/log/mail
-      - ./config/:/tmp/docker-mailserver/
+      - ./Mailserver/config/:/tmp/docker-mailserver/
     environment:
       - ENABLE_POP3=0
       - ENABLE_CLAMAV=0
@@ -28,6 +28,12 @@ services:
       - NET_ADMIN
       - SYS_PTRACE
     restart: always
+
+  gophish:
+    container_name: gophish
+    image: gophish/gophish
+    ports:
+    - 3333:3333
 
 volumes:
   maildata:
