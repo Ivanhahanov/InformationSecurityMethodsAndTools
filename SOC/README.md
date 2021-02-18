@@ -62,8 +62,43 @@ docker-compose up service
 Логин: elsatic
 Пароль: changeme
 ```
+После Ввода логина и пароля вы должны увидеть такое окно:
 
-2. необходимо запустить программу, который эмулирует взаимодействие пользователей с формой логина
+![](https://i.imgur.com/BjkTVnb.png)
+Добро пожаловать в Kibana
+
+Теперь давайте попробуем воспользоваться нашим сервисом с формой:
+2. Переходим по адресу http://localhost:8080
+Вы должны увидеть вот такую, простую форму ввода
+
+![](https://i.imgur.com/2dklWaA.png)
+
+Пароль по умолчанию **admin:admin**
+
+Теперь давайте посмотри залогировались ли наши действия в базу данных
+
+3.  
+![](https://i.imgur.com/1PeyjSM.png)
+
+![](https://i.imgur.com/MuQ3Z8L.png)
+
+![](https://i.imgur.com/ep7kWZm.png)
+
+![](https://i.imgur.com/Aw3uHGn.png)
+
+![](https://i.imgur.com/lTouFDP.png)
+
+![](https://i.imgur.com/VAdNS47.png)
+
+![](https://i.imgur.com/26CyCo3.png)
+
+![](https://i.imgur.com/IavEBxl.png)
+
+![](https://i.imgur.com/73LkLNI.png)
+
+
+
+4. необходимо запустить программу, который эмулирует взаимодействие пользователей с формой логина
 ```
 ./usersSimulation
 
