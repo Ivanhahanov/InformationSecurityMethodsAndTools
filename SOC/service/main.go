@@ -40,6 +40,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		"rAddr":        r.Header.Get("X-FORWARDED-FOR"),
 		"login":        login,
 		"hashPassword": hashPassword,
+		"route":        r.URL.Path,
 	}))
 	log.Hooks.Add(hook)
 	ctx := log.WithFields(logrus.Fields{
