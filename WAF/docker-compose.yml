@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  dvwa_with_modsecurity:
+    build:
+      context: docker-dvwa-modsecurity
+    ports:
+      - 80:80
+    volumes:
+      - ./custom:/etc/modsecurity/custom/
