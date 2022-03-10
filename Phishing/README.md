@@ -350,7 +350,11 @@ IP хоста взять из докера с помощью команды **`d
 
 ![](https://i.imgur.com/FZkOUst.png)
 
-8. Настраиваем рассылку для компании(**Campaigns**)
+8. Настраиваем рассылку для кампании(**Campaigns**)
+
+:::info
+По умолчанию Landing Page URL - http://0.0.0.0
+:::
 
 ![](https://i.imgur.com/I0EsBHM.png)
 

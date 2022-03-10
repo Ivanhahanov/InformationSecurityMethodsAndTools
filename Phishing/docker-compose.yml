@@ -19,7 +19,7 @@ services:
     environment:
       - ENABLE_POP3=0
       - ENABLE_CLAMAV=0
-      - ENABLE_FAIL2BAN=1
+      - ENABLE_FAIL2BAN=0
       - SSL_TYPE=self-signed
       - ENABLE_SPAMASSASSIN=0
       - POSTFIX_INET_PROTOCOLS=ipv4
