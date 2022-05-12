@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+
+  honeypot:
+    image: honeytrap/honeytrap:latest
+    ports:
+      - 22:8022
+      - 23:8023
+      - 80:8080
+      - 21:8021
+      - 6379:6379
+      - 27016:27016
+    volumes:
+      - type: bind
+        source: ./Honeypot/config/config.toml
+        target: /config/config.toml
+  hackers_activity:
+    image: ubuntu
+    platform: linux/amd64
+    command: /app/hackersActivity
+    volumes:
+      - type: bind
+        source: ./hackersActivity
+        target: /app/hackersActivity
+    network_mode: host
