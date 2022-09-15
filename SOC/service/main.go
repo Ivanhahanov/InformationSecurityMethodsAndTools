@@ -3,11 +3,12 @@ package main
 import (
 	"crypto/sha256"
 	"fmt"
-	"github.com/bshuster-repo/logrus-logstash-hook"
-	"github.com/sirupsen/logrus"
 	"net"
 	"net/http"
 	"os"
+
+	"github.com/bshuster-repo/logrus-logstash-hook"
+	"github.com/sirupsen/logrus"
 )
 
 var flag = os.Getenv("FLAG")
